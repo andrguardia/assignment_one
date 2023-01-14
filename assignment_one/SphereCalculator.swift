@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SphereCalculator: View {
-    @State private var radius: String = ""
-    @State private var areaSphere: Double = 0.0
-    @State private var volumeSphere: Double = 0.0
+    @State  var radius: String = ""
+    @State  var areaSphere: Double = 0.0
+    @State  var volumeSphere: Double = 0.0
     
     
     var body: some View {
@@ -30,15 +30,20 @@ struct SphereCalculator: View {
                 Text("\(self.volumeSphere, specifier: "%.2f")")
         }
         
-            Button("Compute!", action:self.calculateSphereParameters())
+            Button("Compute!", action: {self.calculateSphereParameters()})
         }
         
     }
     
     func calculateSphereParameters(){
-        let r = Double($radius)
-        areaSphere = Double(4 * .pi * pow(r, 2))
-        volumeSphere = Double((4/3) * .pi * pow(r, 3))
+        let r = Double(radius)!
+        
+       var sphereParams = SphereParameters()
+        
+        sphereParams.radius = r
+        
+        areaSphere = sphereParams.calculateAreaSphere()
+        volumeSphere = sphereParams.calculateVolumeSphere()
         return
         }
     }
