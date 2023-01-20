@@ -11,7 +11,7 @@ import SwiftUI
 struct assignment_oneApp: App {
     var body: some Scene {
         WindowGroup {
-            SphereCalculator()
+            Calculator()
         }
     }
 }

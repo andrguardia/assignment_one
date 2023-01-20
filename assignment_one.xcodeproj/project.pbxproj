@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1D05E0297A0EC70054C50A /* CubeParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D05DF297A0EC70054C50A /* CubeParameters.swift */; };
 		AB7CF806297212ED00DBC0C5 /* assignment_oneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CF805297212ED00DBC0C5 /* assignment_oneApp.swift */; };
 		AB7CF808297212ED00DBC0C5 /* SphereCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CF807297212ED00DBC0C5 /* SphereCalculator.swift */; };
 		AB7CF80A297212EE00DBC0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7CF809297212EE00DBC0C5 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB1D05DF297A0EC70054C50A /* CubeParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeParameters.swift; sourceTree = "<group>"; };
 		AB7CF802297212ED00DBC0C5 /* assignment_one.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = assignment_one.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7CF805297212ED00DBC0C5 /* assignment_oneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignment_oneApp.swift; sourceTree = "<group>"; };
 		AB7CF807297212ED00DBC0C5 /* SphereCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereCalculator.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		AB7CF7F9297212ED00DBC0C5 = {
 			isa = PBXGroup;
 			children = (
+				AB1D05DF297A0EC70054C50A /* CubeParameters.swift */,
 				AB7CF804297212ED00DBC0C5 /* assignment_one */,
 				AB7CF816297212EE00DBC0C5 /* assignment_oneTests */,
 				AB7CF820297212EE00DBC0C5 /* assignment_oneUITests */,
@@ -266,6 +269,7 @@
 			files = (
 				AB7CF808297212ED00DBC0C5 /* SphereCalculator.swift in Sources */,
 				AB7CF806297212ED00DBC0C5 /* assignment_oneApp.swift in Sources */,
+				AB1D05E0297A0EC70054C50A /* CubeParameters.swift in Sources */,
 				AB7CF8352972306700DBC0C5 /* SphereParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
