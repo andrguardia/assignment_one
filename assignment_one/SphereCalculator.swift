@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct Calculator: View {
+struct ContentView: View {
+    ///The code below initializes state variables for the radius of a sphere, the area of the sphere, the volume of a sphere, the area of a cube and the volume of a cube
     @State  var radius: String = ""
     @State  var areaSphere: Double = 0.0
     @State  var volumeSphere: Double = 0.0
@@ -41,14 +42,15 @@ struct Calculator: View {
         }
         
     }
-    
+    /// This function calculates all the parameters for a cube and a sphere of radius r
+    /// - Returns: the area and volume of a sphere and a cube of radius r
     func calculateParameters(){
         let r = Double(radius)!
         var sphereParams = SphereParameters()
         var cubeParams = CubeParameters()
         
         sphereParams.radius = r
-        cubeParams.radius = r
+        cubeParams.length = 2.0*r
         
         areaSphere = sphereParams.calculateAreaSphere()
         volumeSphere = sphereParams.calculateVolumeSphere()
@@ -62,6 +64,6 @@ struct Calculator: View {
 
 struct Calculator_Previews: PreviewProvider {
     static var previews: some View {
-        Calculator()
+        ContentView()
     }
 }
